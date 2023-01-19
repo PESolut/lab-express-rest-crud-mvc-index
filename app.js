@@ -17,7 +17,7 @@ app.get("/", ( req, res ) => {
 })
 
 // Locations controller
-const locationsController = require("./controllers/locations.controllers");
+const locationsController = require("./controllers/locations.controller");
 app.use("/locations", locationsController);
 
 // Machines controller
@@ -34,7 +34,7 @@ app.use("/plans", plansController)
 
 // Events controller
 const eventsController = require('./controllers/special-events.controller');
-app.use('/events', eventsController)
+app.use('/special-events', eventsController)
 
 // MIDDLEWARE TO SEE HTTP REQUESTS
 app.use(morgan("tiny"))
